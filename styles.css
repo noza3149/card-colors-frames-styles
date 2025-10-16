@@ -1,0 +1,137 @@
+body {
+  background: #f8f8ff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.card {
+  display: flex;
+  background: white;
+  border-radius: 20px;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+  overflow: hidden;
+  width: 700px;
+}
+
+/* --- მარცხენა მხარე --- */
+.left-card {
+  flex: 1;
+  background: linear-gradient(180deg, #6540ff, #836fff);
+  color: white;
+  text-align: center;
+  padding: 40px 20px;
+  border-radius: 20px;
+}
+
+.result {
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  opacity: 0.9;
+}
+
+.score-card {
+  background: linear-gradient(180deg, #4b2dff, #7a6fff);
+  width: 130px;
+  height: 130px;
+  border-radius: 50%;
+  margin: 25px auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.score {
+  font-size: 48px;
+  margin: 0;
+}
+
+.out-of {
+  font-size: 14px;
+  opacity: 0.8;
+}
+
+.text {
+  font-size: 24px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.description {
+  font-size: 14px;
+  opacity: 0.9;
+}
+
+/* --- მარჯვენა მხარე --- */
+.right-card {
+  flex: 1;
+  padding: 40px;
+}
+
+.summary {
+  font-weight: bold;
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+.list-item div {
+  margin-bottom: 15px;
+}
+
+/* თითო კატეგორიის ვიზუალური განსხვავება */
+.first, .second, .third, .fourth {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px;
+  border-radius: 10px;
+}
+
+.first {
+  background: #fff6f5;
+  color: #ff5757;
+}
+.second {
+  background: #fffbf2;
+  color: #ffb01f;
+}
+.third {
+  background: #f2fbfa;
+  color: #00bd91;
+}
+.fourth {
+  background: #f3f3fd;
+  color: #1125d6;
+}
+
+/* ღილაკი */
+.continue {
+  width: 100%;
+  padding: 12px;
+  border: none;
+  border-radius: 30px;
+  background: #303b59;
+  color: white;
+  font-weight: bold;
+  font-size: 14px;
+  margin-top: 25px;
+  cursor: pointer;
+}
+
+/* ყველა აიქონი (img) ერთნაირი ზომით */
+.list-item img {
+  width: 20px;       /* აიქონის სიგანე */
+  height: 20px;      /* აიქონის სიმაღლე */
+  margin-right: 8px; /* ტექსტთან მცირე დაშორება */
+  vertical-align: middle; /* ტექსტთან სწორ ხაზზე მოათავსებს */
+}
+
+/* აიქონი და ტექსტი გვერდიგვერდ გასწორებული */
+.list-item > div > div {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
