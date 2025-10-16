@@ -1,3 +1,9 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
 body {
   background: #f8f8ff;
   display: flex;
@@ -7,33 +13,40 @@ body {
   margin: 0;
 }
 
+
+
+
 .card {
   display: flex;
   background: white;
   border-radius: 20px;
-  box-shadow: 0 5px 20px rgba(0,0,0,0.1);
-  overflow: hidden;
-  width: 700px;
 }
 
-/* --- მარცხენა მხარე --- */
+
+
+
+
 .left-card {
   flex: 1;
-  background: linear-gradient(180deg, #6540ff, #836fff);
+  background: #6540ff;
   color: white;
   text-align: center;
   padding: 40px 20px;
   border-radius: 20px;
 }
 
+
+
 .result {
-  text-transform: uppercase;
+  font-weight: bold;
   letter-spacing: 1px;
   opacity: 0.9;
 }
 
+
+
 .score-card {
-  background: linear-gradient(180deg, #4b2dff, #7a6fff);
+  background: #7a6fff;
   width: 130px;
   height: 130px;
   border-radius: 50%;
@@ -44,15 +57,20 @@ body {
   align-items: center;
 }
 
+
+
 .score {
   font-size: 48px;
   margin: 0;
 }
 
+
+
 .out-of {
   font-size: 14px;
-  opacity: 0.8;
 }
+
+
 
 .text {
   font-size: 24px;
@@ -60,12 +78,15 @@ body {
   margin-bottom: 10px;
 }
 
+
+
 .description {
   font-size: 14px;
-  opacity: 0.9;
 }
 
-/* --- მარჯვენა მხარე --- */
+
+
+
 .right-card {
   flex: 1;
   padding: 40px;
@@ -77,11 +98,15 @@ body {
   margin-bottom: 20px;
 }
 
+
+
 .list-item div {
   margin-bottom: 15px;
 }
 
-/* თითო კატეგორიის ვიზუალური განსხვავება */
+
+
+
 .first, .second, .third, .fourth {
   display: flex;
   justify-content: space-between;
@@ -91,46 +116,65 @@ body {
 }
 
 .first {
-  background: #fff6f5;
-  color: #ff5757;
+  background: #feeeec;
+  color: #fe4545;
 }
 .second {
-  background: #fffbf2;
-  color: #ffb01f;
+  background: #fff7e5;
+  color: #fcab14;
 }
 .third {
-  background: #f2fbfa;
-  color: #00bd91;
+  background: #dbf3f0;
+  color: #01cb9c;
 }
 .fourth {
-  background: #f3f3fd;
-  color: #1125d6;
+  background: #ededfa;
+  color: #081dd4;
 }
 
-/* ღილაკი */
+
+.item-score {
+  font-weight: bold;
+  color: rgba(0, 0, 0, 0.712);
+  font-size: 16px;
+  margin: 0;
+}
+
+.out-of {
+  font-weight: bold;
+  color: rgba(0, 0, 0, 0.5);
+  font-size: 14px;
+}
+
+.of {
+color: rgba(255, 255, 255, 0.684);
+  font-size: 14px;
+}
+
 .continue {
   width: 100%;
   padding: 12px;
-  border: none;
   border-radius: 30px;
-  background: #303b59;
+  background: #2b385c;
   color: white;
   font-weight: bold;
   font-size: 14px;
-  margin-top: 25px;
-  cursor: pointer;
 }
 
-/* ყველა აიქონი (img) ერთნაირი ზომით */
+
+
+
 .list-item img {
-  width: 20px;       /* აიქონის სიგანე */
-  height: 20px;      /* აიქონის სიმაღლე */
-  margin-right: 8px; /* ტექსტთან მცირე დაშორება */
-  vertical-align: middle; /* ტექსტთან სწორ ხაზზე მოათავსებს */
+  width: 20px; 
+  height: 20px; 
+  margin-right: 8px;
+  vertical-align: middle;
 }
 
-/* აიქონი და ტექსტი გვერდიგვერდ გასწორებული */
-.list-item > div > div {
+
+
+
+.list-item div div {
   display: flex;
   align-items: center;
   gap: 8px;
